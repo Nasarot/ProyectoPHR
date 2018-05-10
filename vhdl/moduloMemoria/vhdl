@@ -1,0 +1,13 @@
+ENTITY grafo IS
+PORT (x, y : IN BIT; espacio, caracter, y: OUT BIT);
+ENND grafo;
+
+ARCHITECTURE funcionalCASE OF grafo is
+BEGIN
+  PROCESS (espacio,caracter)
+    VARIABLE a:BIT_VECTOR (7 DOWNTO 0);
+    BEGIN
+      a:=espacio&caracter;
+      CASE a IS
+ 
+--------NI IDEA----------------
